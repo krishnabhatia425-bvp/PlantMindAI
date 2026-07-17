@@ -31,7 +31,12 @@ Built using:
 
 
 # Load trained model
-model = tf.keras.models.load_model("model/plant_disease_model.h5")
+import gdown
+url = "https://drive.google.com/file/d/18h_JtHJvwY2BPaHB0aJXwsHWNZjnYgEn/view?usp=drivesdk"
+
+gdown.download(url, "plant_disease_model.h5", quiet=False)
+
+model = tf.keras.models.load_model("plant_disease_model.h5")
 
 
 # App title
