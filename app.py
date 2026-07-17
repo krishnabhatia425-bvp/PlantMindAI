@@ -2,7 +2,7 @@ import streamlit as st
 import tensorflow as tf
 from PIL import Image
 import numpy as np
-print("App started")
+st.write("App is starting...")
 
 st.set_page_config(
     page_title="PlantMind AI",
