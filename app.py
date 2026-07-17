@@ -31,7 +31,7 @@ Built using:
 
 
 # Load trained model
-model = tf.keras.models.load_model("plant_disease_model.h5")
+model = tf.keras.models.load_model("model/plant_disease_model.h5")
 
 
 # App title
