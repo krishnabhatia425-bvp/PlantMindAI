@@ -35,8 +35,10 @@ import gdown
 url = "https://drive.google.com/file/d/18h_JtHJvwY2BPaHB0aJXwsHWNZjnYgEn/view?usp=drivesdk"
 
 gdown.download(url, "plant_disease_model.h5", quiet=False)
+print("Model download complete")
 
 model = tf.keras.models.load_model("plant_disease_model.h5")
+print("Model loaded successfully")
 
 
 # App title
