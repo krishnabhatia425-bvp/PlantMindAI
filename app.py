@@ -2,6 +2,7 @@ import streamlit as st
 import tensorflow as tf
 from PIL import Image
 import numpy as np
+print("App started")
 
 st.set_page_config(
     page_title="PlantMind AI",
@@ -33,6 +34,7 @@ Built using:
 # Load trained model
 import gdown
 url = "https://drive.google.com/file/d/18h_JtHJvwY2BPaHB0aJXwsHWNZjnYgEn/view?usp=drivesdk"
+print("Starting model download")
 
 gdown.download(url, "plant_disease_model.h5", quiet=False)
 print("Model download complete")
