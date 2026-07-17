@@ -35,6 +35,7 @@ Built using:
 import gdown
 url = "https://drive.google.com/file/d/18h_JtHJvwY2BPaHB0aJXwsHWNZjnYgEn/view?usp=drivesdk"
 print("Starting model download")
+st.write("Downloading model...")
 
 gdown.download(url, "plant_disease_model.h5", quiet=False)
 print("Model download complete")
